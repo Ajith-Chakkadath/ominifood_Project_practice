@@ -109,6 +109,34 @@ body{
     background-color: #f5cba7;
     color: #555;
 }
+
+l.ink:link,.link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+.link:hover , .link:active{
+    color: #a15818;
+    text-decoration: none;
+   border-bottom: 1px solid transparent;
+}
+
+/* Helperclass */
+
 .margin-right-sm{
     margin-right: 1.6rem;
+}
+.margin-bottom-md{
+    margin-bottom: 4.8rem !important;
+}
+
+.center-text{
+    text-align: center;
+}
+
+strong{
+    font-weight: 500;
 }
