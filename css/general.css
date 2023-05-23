@@ -49,6 +49,9 @@ body{
 .grid--4-cols{
     grid-template-columns: repeat(4,1fr);
 }
+.grid--5-cols{
+    grid-template-columns: repeat(5,1fr);
+}
 
 .grid--center-v{
     align-items: center;
@@ -89,7 +92,7 @@ body{
  letter-spacing: 0.75px;
 
 }
-.btn:link , .btn:visited{
+.btn,.btn:link , .btn:visited{
     display: inline-block;
    
     text-decoration: none;
@@ -98,6 +101,10 @@ body{
     padding: 1.6rem 3.2rem;
     border-radius: 150px;
     transition: all 1s;
+
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
 }
 .btn--full:link , .btn--full:visited{
     background-color: #e67e22;
@@ -117,7 +124,16 @@ body{
     background-color: #f5cba7;
     color: #555;
 }
+.btn--form{
+    background-color: #45260a;
+    color: #f5cba7;
+    align-self: end;
+}
 
+.btn--form:hover{
+    background-color: #fff;
+    color: #333;
+}
 l.ink:link,.link:visited{
     display: inline-block;
     color: #e67e22;
@@ -149,6 +165,11 @@ l.ink:link,.link:visited{
     width: 3rem;
     height: 3rem;
     color:#e67e22 ;
+}
+
+*:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* Helperclass */
